@@ -82,12 +82,16 @@ def inputPlayers():
 
 def assignAbility(player):
     """Memberikan ability acak kepada pemain."""
-    abilities = ["Instant Kill", "Deathless Gambling", "God of life"]
+    abilities = ["Instant Kill", "Deathless Gambling", "God of life", "The worst demon", "Greater HAX", "Absolute triangle", "Hyperspace"]
     chosen_ability = random.choice(abilities)
     setPlayer(player, "ability", chosen_ability)
     if chosen_ability == "God of life":
         setPlayer(player, "health", 100)
         print(f"{player['name']} mendapatkan ability God of life! Health dipulihkan ke 100.")
+    elif chosen_ability == "The worst demon":
+        setPlayer(player, "health", 1000)
+        setPlayer(player, "damage", 1000)
+        setPlayer(player, "defense", 1000)
     else:
         print(f"{player['name']} mendapatkan ability {chosen_ability}!")
 
