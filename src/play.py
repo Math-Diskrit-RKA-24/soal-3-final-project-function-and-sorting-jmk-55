@@ -17,7 +17,7 @@ def createNewPlayer(name, damage=0, defensePower=0):
         "defensePower": defensePower,
         "defense": False,
         "ability": None,
-        "skipTurn": False  # Untuk ability Mind Manipulation
+        "skipTurn": False  
     }
 
 def addPlayer(player):
